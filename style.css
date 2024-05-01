@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container{
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.hide{
+    display: none !important;
+}
+
+p{
+    color: gainsboro;
+    line-height: 1.8;
+    font-size: 22px ;
+}
+.header{
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 100;
+}
+.header-cantainer{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px ;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #69b9ff;
+
+}
+.header-nav ul{
+display: flex;
+}
+.header-nav li + li {
+    margin-left: 25px;
+}
+.header-nav a {
+    font-size: 16px;
+    color: #676770;
+    transition: color 0.5s ;
+}
+.header-nav a:hover{
+    font-size: 17px ;
+    color: #0082f3;
+}
+.header-nav a:active{
+    color: #0010f2;
+}
+.welcome {
+    padding: 20px 0;
+    min-height: 600px;
+    font-size: 22px;
+    color: #fff ;
+    background-color: dimgray;
+    background-image: url("image/img_5.png");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 1px #000;
+}
+.welcome text+text{
+    margin-bottom: 30px ;
+}
+.welcome-text1 {
+    font-size: 22px;
+    padding: 20px 0;
+    text-align: right;
+}
+.welcome-heading {
+    text-align: center;
+    padding: 60px 0;
+    FONT-SIZE: 35px;
+}
+.inf-section {
+    background-color: gainsboro;
+}
+.inf-heading{
+    text-align: center;
+    padding: 60px 0;
+    FONT-SIZE: 35px;
+}
+
+.inf-text{
+    padding: 20px 0;
+    min-height: 400px;
+    font-size: 22px;
+    color: #000f10 ;
+}
+.tabs-section{
+    color: gainsboro;
+    background-color: #001;
+    min-height: 750px;
+}
+.tabs-item h1 {
+    font-size: 26px;
+    text-align: center;
+}
+.tabs-item {
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    from{
+opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.tabs-text {
+    font-size: 22px;
+    color: gainsboro;
+}
+
+.tabs-nav button {
+    padding: 0 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: gainsboro;
+    background-color: #92a0ad;
+    border-radius: 4px;
+}
+.tabs-nav {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tabs-nav button.active {
+    background-color: #0082f3;
+}
+.tabs-nav button+button{
+    margin-left: 15px;
+}
+.fw-heading{
+    text-align: center;
+    padding: 60px 0;
+    FONT-SIZE: 35px;
+    color : #000;
+}
+.fw-text{
+    min-height: 50px;
+    font-size: 22px;
+    color: #000f10 ;
+
+}
+.fw {
+    background-color: gainsboro ;
+}
+.wo{
+    background-color: #001;
+    min-height: 600px;
+}
+.wo-heading{
+    text-align: center;
+    padding: 60px 0;
+    FONT-SIZE: 35px;
+    color : #fff;
+}
+.wo-text {
+    min-height: 50px;
+    font-size: 22px;
+    color: gainsboro;
+}
+@media (max-width: 400px ) {.tabs-nav button {
+    padding: 10px 30px;
+}
+    .tabs-nav button+button{
+        margin-left: 0;
+    }
+    .header-nav li + li {
+        margin-left: 10px;
+    }
+    
+}
